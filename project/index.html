@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Course Home Page" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Course Home Page</title>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <h1>My Courses</h1>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filter-section">
+      <button class="filter-btn" data-subject="all">All</button>
+      <button class="filter-btn" data-subject="math">Math</button>
+      <button class="filter-btn" data-subject="cs">Computer Science</button>
+    </section>
+
+    <section class="course-list" id="courseList"></section>
+
+    <section class="credits">
+      <p>Total Credits: <span id="totalCredits">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> |
+      Last Modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

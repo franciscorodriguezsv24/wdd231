@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Navigation */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    background: #004080;
+    flex-wrap: wrap;
+}
+
+.navbar li a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    background: #0066cc;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+
+    @media (min-width:880px) {
+        width: 25%;
+        
+    }
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.75rem 1.5rem;
+    background: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+}
+
+/* Company Spotlight */
+.spotlight-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.spotlight-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #004080;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+}

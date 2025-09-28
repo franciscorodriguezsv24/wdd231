@@ -1,0 +1,7 @@
+[
+    {"name": "Company A", "membership": "gold", "logo":"images/logos/logo-1a.jpg", "phone":"123-456-7890", "address":"123 Main St", "website":"https://balanceapp.com/"},
+    {"name": "Company B", "membership": "silver", "logo":"images/logos/logo-2.jpg", "phone":"234-567-8901", "address":"456 Elm St", "website":"https://balanceapp.com/"},
+    {"name": "Company C", "membership": "bronze", "logo":"images/logos/logo-4.png", "phone":"345-678-9012", "address":"789 Oak St", "website":"https://balanceapp.com/"},
+    {"name": "Company D", "membership": "gold", "logo":"images/logos/logo-5.png", "phone":"456-789-0123", "address":"321 Pine St", "website":"https://balanceapp.com/"},
+    {"name": "Company E", "membership": "silver", "logo":"images/logos/logo-6.png", "phone":"567-890-1234", "address":"654 Maple St", "website":"https://balanceapp.com/"}
+]
