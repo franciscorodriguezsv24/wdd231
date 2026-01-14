@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alejandro Rodriguez's Software Engineering Portfolio - WDD 231 Course Work showcasing web development skills and certificates">
+    <meta name="author" content="Alejandro Rodriguez">
+    <title>WDD 231 | Software Engineering Portfolio | Alejandro Rodriguez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/data.js" defer></script>
+    <script src="script/courses.js" defer></script>
+    <script src="script/navigation.js" defer></script>
+    <script src="script/footer.js" defer></script>
+    <script src="script/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="index.html" aria-label="Home">
+                <img src="images/webhook.svg" alt="Portfolio Logo" width="40" height="40">
+            </a>
+            <h1 class="site-title">Software Engineering Portfolio</h1>
+            <button class="menu-button" id="menuButton" aria-label="Toggle navigation menu" aria-expanded="false">
+                <img src="images/menu.svg" alt="" width="24" height="24" aria-hidden="true">
+            </button>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="hero-section">
+            <h2 class="page-title">Home</h2>
+        </section>
+
+        <section class="about-me-section" aria-labelledby="about-heading">
+            <div class="about-me-container">
+                <div class="about-me-text-container">
+                    <h2 id="about-heading">About Me</h2>
+                    <p>I am a dedicated software engineering student passionate about web development and creating user-friendly digital experiences. Currently pursuing my studies with a focus on front-end technologies, I am building a strong foundation in HTML, CSS, and JavaScript to create accessible and responsive web applications.</p>
+                </div>
+                <div class="student-photo-container">
+                    <img src="images/profile-photo.jpg" alt="Alejandro Rodriguez - Student Photo" width="200" height="200" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-section" aria-labelledby="courses-heading">
+            <h2 id="courses-heading">Web Development Certificate Courses</h2>
+            <div class="filter-buttons" role="group" aria-label="Filter courses by subject">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+            <div class="courses-container" id="coursesContainer">
+                <!-- Courses will be dynamically inserted here -->
+            </div>
+            <p class="credits-total" id="creditsTotal">Total Credits: 0</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                <img src="images/facebook.svg" alt="" width="24" height="24" aria-hidden="true">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">
+                <img src="images/twitter.svg" alt="" width="24" height="24" aria-hidden="true">
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our GitHub page">
+                <img src="images/github.svg" alt="" width="24" height="24" aria-hidden="true">
+            </a>
+        </div>
+        <p class="copyright">
+            &copy; <span id="currentYear"></span> Alejandro Rodriguez - El Salvador |
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
