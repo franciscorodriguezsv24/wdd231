@@ -1,0 +1,200 @@
+/* larger.css - Tablet and Desktop Styles */
+
+/* ==================== TABLET (768px and up) ==================== */
+@media (min-width: 768px) {
+    /* Header */
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
+    .logo-container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .logo-text p {
+        font-size: 0.8rem;
+    }
+
+    /* Hide hamburger, show nav */
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-nav {
+        display: block;
+        background-color: var(--primary-dark);
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-nav ul li a {
+        padding: 0.75rem 1.5rem;
+        border-bottom: none;
+        border-bottom: 3px solid transparent;
+    }
+
+    .main-nav ul li a:hover,
+    .main-nav ul li a:focus {
+        background-color: transparent;
+        border-bottom-color: var(--secondary-color);
+    }
+
+    .main-nav ul li a.active {
+        background-color: transparent;
+        color: var(--text-light);
+        border-bottom-color: var(--secondary-color);
+    }
+
+    /* Main Content */
+    .main-content {
+        padding: 2rem;
+    }
+
+    /* Directory Header */
+    .directory-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .directory-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Grid View - 2 columns */
+    .directory-container.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 2rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-info {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .footer-social {
+        flex: 0;
+    }
+
+    .footer-credits {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+/* ==================== DESKTOP (1024px and up) ==================== */
+@media (min-width: 1024px) {
+    /* Header */
+    .site-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-container {
+        flex: 0 0 auto;
+    }
+
+    .main-nav {
+        flex: 1;
+        background-color: transparent;
+    }
+
+    .main-nav ul {
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
+
+    .main-nav ul li a {
+        padding: 1.5rem 1.25rem;
+    }
+
+    /* Grid View - 3 columns */
+    .directory-container.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Grid Card */
+    .grid-view .member-image {
+        height: 180px;
+    }
+
+    .grid-view .member-info {
+        padding: 1.25rem;
+    }
+
+    .grid-view .member-name {
+        font-size: 1.2rem;
+    }
+
+    /* List View */
+    .list-view .member-card {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .list-view .member-image {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+    }
+
+    .list-view .member-name {
+        font-size: 1.1rem;
+    }
+
+    .list-view .member-details {
+        font-size: 0.875rem;
+    }
+
+    /* Footer */
+    .footer-info {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .footer-credits {
+        text-align: right;
+        width: auto;
+        flex: 1;
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+/* ==================== LARGE DESKTOP (1200px and up) ==================== */
+@media (min-width: 1200px) {
+    /* Grid View - 4 columns */
+    .directory-container.grid-view {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .main-nav ul li a {
+        padding: 1.5rem 1.5rem;
+        font-size: 1.05rem;
+    }
+
+    .directory-header h2 {
+        font-size: 2.25rem;
+    }
+}

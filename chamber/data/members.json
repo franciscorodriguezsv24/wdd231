@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+            "name": "El Salvador Coffee Co.",
+            "address": "123 Calle Principal, San Salvador",
+            "phone": "+503 2222-1111",
+            "website": "https://elsalvadorcoffee.com",
+            "image": "salvadorcoffe.png",
+            "membershipLevel": 3,
+            "description": "Premium Salvadoran coffee exporters since 1985."
+        },
+        {
+            "name": "TechSolutions SV",
+            "address": "456 Boulevard Los Heroes, San Salvador",
+            "phone": "+503 2333-4444",
+            "website": "https://techsolutionssv.com",
+            "image": "tech-solution.avif",
+            "membershipLevel": 3,
+            "description": "Leading IT services and software development company."
+        },
+        {
+            "name": "Pupuseria La Bendicion",
+            "address": "789 Avenida Central, Santa Tecla",
+            "phone": "+503 2555-6666",
+            "website": "https://pupuserialabendicion.com",
+            "image": "la-bendicion.png",
+            "membershipLevel": 2,
+            "description": "Authentic Salvadoran cuisine and traditional pupusas."
+        },
+        {
+            "name": "Construcciones Martinez",
+            "address": "321 Calle San Antonio, Antiguo Cuscatlan",
+            "phone": "+503 2777-8888",
+            "website": "https://construccionesmartinez.com",
+            "image": "jose-martinez.png",
+            "membershipLevel": 2,
+            "description": "Commercial and residential construction services."
+        },
+        {
+            "name": "Farmacia San Jose",
+            "address": "654 Boulevard Constitucion, San Salvador",
+            "phone": "+503 2999-0000",
+            "website": "https://farmaciasanjose.com",
+            "image": "san-jose.jpg",
+            "membershipLevel": 1,
+            "description": "Your trusted neighborhood pharmacy since 1970."
+        },
+        {
+            "name": "Auto Import El Salvador",
+            "address": "987 Carretera Panamericana, Soyapango",
+            "phone": "+503 2111-2222",
+            "website": "https://autoimportsv.com",
+            "image": "auto-import.jpg",
+            "membershipLevel": 2,
+            "description": "Quality used and new vehicles at competitive prices."
+        },
+        {
+            "name": "Hotel Vista Volcan",
+            "address": "159 Calle El Mirador, Santa Ana",
+            "phone": "+503 2444-5555",
+            "website": "https://hotelvistavolcan.com",
+            "image": "vista-a-volcan.jpg",
+            "membershipLevel": 3,
+            "description": "Luxury hotel with stunning volcano views and amenities."
+        },
+        {
+            "name": "Panaderia El Rosario",
+            "address": "753 Avenida Independencia, San Miguel",
+            "phone": "+503 2666-7777",
+            "website": "https://panaderiaelrosario.com",
+            "image": "el-rosario.jpg",
+            "membershipLevel": 1,
+            "description": "Fresh artisan bread and pastries daily."
+        }
+    ]
+}
