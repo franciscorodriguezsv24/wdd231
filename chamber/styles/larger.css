@@ -198,3 +198,140 @@
         font-size: 2.25rem;
     }
 }
+
+/* ==================== HOME PAGE - TABLET (768px and up) ==================== */
+@media (min-width: 768px) {
+    /* Hero Section */
+    .hero-section {
+        min-height: 400px;
+        padding: 3rem 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    /* Home Grid */
+    .home-grid {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+    }
+
+    /* Events takes full width */
+    .events-section {
+        grid-column: 1 / -1;
+    }
+
+    .events-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .event-card {
+        flex: 1 1 calc(50% - 0.5rem);
+        min-width: 280px;
+    }
+
+    /* Weather Section */
+    .weather-section {
+        grid-column: 1;
+    }
+
+    .weather-current {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .weather-details {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    /* Spotlights Section */
+    .spotlights-section {
+        grid-column: 2;
+    }
+
+    .spotlights-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==================== HOME PAGE - DESKTOP (1024px and up) ==================== */
+@media (min-width: 1024px) {
+    /* Hero Section */
+    .hero-section {
+        min-height: 450px;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    .cta-button {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Home Grid - 3 column layout */
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Events full width top */
+    .events-section {
+        grid-column: 1 / -1;
+    }
+
+    .event-card {
+        flex: 1;
+    }
+
+    /* Weather and Spotlights side by side with 2 columns */
+    .weather-section {
+        grid-column: 1;
+    }
+
+    .spotlights-section {
+        grid-column: 2 / -1;
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Section Titles */
+    .events-section h2,
+    .weather-section h2,
+    .spotlights-section h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* ==================== HOME PAGE - LARGE DESKTOP (1200px and up) ==================== */
+@media (min-width: 1200px) {
+    .home-grid {
+        gap: 2.5rem;
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* 3 spotlights in a row */
+    .spotlight-card {
+        padding: 1.25rem;
+    }
+}
