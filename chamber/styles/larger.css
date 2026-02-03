@@ -335,3 +335,53 @@
         padding: 1.25rem;
     }
 }
+
+/* ==================== JOIN PAGE - TABLET (768px and up) ==================== */
+@media (min-width: 768px) {
+    .join-page {
+        padding: 2rem;
+    }
+
+    .page-heading {
+        font-size: 2rem;
+    }
+
+    .join-grid {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .form-section {
+        flex: 3;
+    }
+
+    .membership-cards-section {
+        flex: 2;
+        position: sticky;
+        top: 100px;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==================== JOIN PAGE - DESKTOP (1024px and up) ==================== */
+@media (min-width: 1024px) {
+    .form-section form {
+        padding: 2rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membership-modal {
+        max-width: 500px;
+    }
+
+    /* Thank You Page */
+    .thankyou-container {
+        padding: 3rem;
+    }
+}

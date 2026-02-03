@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the San Salvador Chamber of Commerce - Apply for membership and grow your business with our community of local entrepreneurs.">
+    <meta name="author" content="Alejandro Rodriguez">
+
+    <meta property="og:title" content="Join | San Salvador Chamber of Commerce">
+    <meta property="og:description" content="Apply for membership at the San Salvador Chamber of Commerce and unlock business growth opportunities.">
+    <meta property="og:image" content="images/chamber-social.webp">
+    <meta property="og:url" content="https://yourdomain.com/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <title>Join | San Salvador Chamber of Commerce</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/alcaldia.png" alt="San Salvador Chamber of Commerce Logo" width="60" height="60">
+                <div class="logo-text">
+                    <h1>San Salvador</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content join-page">
+        <h2 class="page-heading">Membership Application</h2>
+
+        <div class="join-grid">
+            <!-- Application Form -->
+            <section class="form-section" aria-labelledby="form-heading">
+                <h3 id="form-heading" class="sr-only">Application Form</h3>
+                <form action="thankyou.html" method="get" id="membershipForm">
+                    <label for="first-name">First Name <span class="required">*</span>
+                        <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label for="last-name">Last Name <span class="required">*</span>
+                        <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label for="org-title">Organizational Title
+                        <input type="text" id="org-title" name="org-title" title="Enter your title within the organization (minimum 7 characters, letters, hyphens, and spaces only)" autocomplete="organization-title" pattern="[a-zA-ZÀ-ÿ\s\-]{7,}" minlength="7">
+                    </label>
+
+                    <label for="email">Email Address <span class="required">*</span>
+                        <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="e.g. name@example.com" required>
+                    </label>
+
+                    <label for="phone">Mobile Phone <span class="required">*</span>
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+                    <label for="organization">Business/Organization Name <span class="required">*</span>
+                        <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <fieldset class="membership-fieldset">
+                        <legend>Membership Level <span class="required">*</span></legend>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="np" required>
+                            NP Membership (Non-Profit - Free)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <label for="description">Business Description
+                        <textarea id="description" name="description" title="Describe your business or organization" rows="4"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </section>
+
+            <!-- Membership Level Cards -->
+            <section class="membership-cards-section" aria-labelledby="levels-heading">
+                <h3 id="levels-heading">Membership Levels</h3>
+                <div class="membership-cards">
+                    <div class="membership-card card-np" style="animation-delay: 0s;">
+                        <h4>NP Membership</h4>
+                        <p class="card-price">Free</p>
+                        <p class="card-desc">For non-profit organizations</p>
+                        <button class="card-info-btn" data-modal="modal-np">More Info</button>
+                    </div>
+                    <div class="membership-card card-bronze" style="animation-delay: 0.15s;">
+                        <h4>Bronze</h4>
+                        <p class="card-price">$50/yr</p>
+                        <p class="card-desc">Essential business exposure</p>
+                        <button class="card-info-btn" data-modal="modal-bronze">More Info</button>
+                    </div>
+                    <div class="membership-card card-silver" style="animation-delay: 0.3s;">
+                        <h4>Silver</h4>
+                        <p class="card-price">$150/yr</p>
+                        <p class="card-desc">Enhanced visibility & benefits</p>
+                        <button class="card-info-btn" data-modal="modal-silver">More Info</button>
+                    </div>
+                    <div class="membership-card card-gold" style="animation-delay: 0.45s;">
+                        <h4>Gold</h4>
+                        <p class="card-price">$300/yr</p>
+                        <p class="card-desc">Premium access & top exposure</p>
+                        <button class="card-info-btn" data-modal="modal-gold">More Info</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modals -->
+        <dialog id="modal-np" class="membership-modal">
+            <h3>NP Membership</h3>
+            <p class="modal-price">Free</p>
+            <ul>
+                <li>Listed in member directory</li>
+                <li>Access to chamber events</li>
+                <li>Monthly newsletter subscription</li>
+                <li>Community networking opportunities</li>
+            </ul>
+            <button class="modal-close-btn" autofocus>Close</button>
+        </dialog>
+
+        <dialog id="modal-bronze" class="membership-modal">
+            <h3>Bronze Membership</h3>
+            <p class="modal-price">$50/year</p>
+            <ul>
+                <li>All NP benefits included</li>
+                <li>Business logo in member directory</li>
+                <li>10% discount on event registrations</li>
+                <li>Access to training workshops</li>
+                <li>Social media shout-out upon joining</li>
+            </ul>
+            <button class="modal-close-btn" autofocus>Close</button>
+        </dialog>
+
+        <dialog id="modal-silver" class="membership-modal">
+            <h3>Silver Membership</h3>
+            <p class="modal-price">$150/year</p>
+            <ul>
+                <li>All Bronze benefits included</li>
+                <li>Home page spotlight eligibility</li>
+                <li>25% discount on event registrations</li>
+                <li>Priority access to training workshops</li>
+                <li>Featured in quarterly newsletter</li>
+                <li>Business card display at chamber events</li>
+            </ul>
+            <button class="modal-close-btn" autofocus>Close</button>
+        </dialog>
+
+        <dialog id="modal-gold" class="membership-modal">
+            <h3>Gold Membership</h3>
+            <p class="modal-price">$300/year</p>
+            <ul>
+                <li>All Silver benefits included</li>
+                <li>Premium home page spotlight placement</li>
+                <li>50% discount on event registrations</li>
+                <li>Free booth at annual business expo</li>
+                <li>Exclusive networking dinners with leaders</li>
+                <li>Custom marketing consultation session</li>
+                <li>Top listing in member directory</li>
+            </ul>
+            <button class="modal-close-btn" autofocus>Close</button>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/alcaldia.png" alt="Chamber Logo" width="50" height="50">
+                    <p>San Salvador Chamber of Commerce</p>
+                </div>
+                <address class="contact-info">
+                    <p>123 Alameda Juan Pablo II</p>
+                    <p>San Salvador, El Salvador</p>
+                    <p>Email: <a href="mailto:info@sansalvadorchamber.com">info@sansalvadorchamber.com</a></p>
+                    <p>Phone: <a href="tel:+50322221234">+503 2222-1234</a></p>
+                </address>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                    <img src="images/facebook-icon.svg" alt="" width="30" height="30" aria-hidden="true">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">
+                    <img src="images/twitter-icon.svg" alt="" width="30" height="30" aria-hidden="true">
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
+                    <img src="images/linkedin-icon.svg" alt="" width="30" height="30" aria-hidden="true">
+                </a>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; <span id="currentYear"></span> San Salvador Chamber of Commerce</p>
+                <p>Alejandro Rodriguez | WDD 231</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

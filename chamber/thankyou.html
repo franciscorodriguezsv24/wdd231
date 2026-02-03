@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for applying to the San Salvador Chamber of Commerce. Your membership application has been received.">
+    <meta name="author" content="Alejandro Rodriguez">
+
+    <title>Thank You | San Salvador Chamber of Commerce</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/alcaldia.png" alt="San Salvador Chamber of Commerce Logo" width="60" height="60">
+                <div class="logo-text">
+                    <h1>San Salvador</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content thankyou-page">
+        <div class="thankyou-container">
+            <h2>Thank You for Applying!</h2>
+            <p class="thankyou-message">Your membership application has been received. We will review your information and get back to you shortly.</p>
+
+            <div class="submitted-info" id="submittedInfo">
+                <h3>Your Submitted Information</h3>
+                <table class="info-table">
+                    <tr>
+                        <th>First Name</th>
+                        <td id="display-first-name"></td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td id="display-last-name"></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td id="display-email"></td>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <td id="display-phone"></td>
+                    </tr>
+                    <tr>
+                        <th>Organization</th>
+                        <td id="display-organization"></td>
+                    </tr>
+                    <tr>
+                        <th>Application Date</th>
+                        <td id="display-timestamp"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <a href="index.html" class="back-home-btn">Return to Home</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/alcaldia.png" alt="Chamber Logo" width="50" height="50">
+                    <p>San Salvador Chamber of Commerce</p>
+                </div>
+                <address class="contact-info">
+                    <p>123 Alameda Juan Pablo II</p>
+                    <p>San Salvador, El Salvador</p>
+                    <p>Email: <a href="mailto:info@sansalvadorchamber.com">info@sansalvadorchamber.com</a></p>
+                    <p>Phone: <a href="tel:+50322221234">+503 2222-1234</a></p>
+                </address>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                    <img src="images/facebook-icon.svg" alt="" width="30" height="30" aria-hidden="true">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">
+                    <img src="images/twitter-icon.svg" alt="" width="30" height="30" aria-hidden="true">
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
+                    <img src="images/linkedin-icon.svg" alt="" width="30" height="30" aria-hidden="true">
+                </a>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; <span id="currentYear"></span> San Salvador Chamber of Commerce</p>
+                <p>Alejandro Rodriguez | WDD 231</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
