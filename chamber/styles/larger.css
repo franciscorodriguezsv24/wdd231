@@ -385,3 +385,101 @@
         padding: 3rem;
     }
 }
+
+/* ==================== DISCOVER PAGE - MEDIUM (641px to 1024px) ==================== */
+@media (min-width: 641px) {
+    .discover-page {
+        padding: 0 2rem 2rem;
+    }
+
+    .discover-header h2 {
+        font-size: 2rem;
+    }
+
+    .demographics-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .demo-number {
+        font-size: 1.75rem;
+    }
+
+    /* Medium Grid Layout - Named Grid Areas */
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "cathedral palace"
+            "boqueron boqueron"
+            "marte mercado"
+            "jardin monumento"
+            "joya joya";
+    }
+
+    /* Image Hover Effect - Only on larger screens */
+    .card-figure img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+
+/* ==================== DISCOVER PAGE - LARGE (1025px and up) ==================== */
+@media (min-width: 1025px) {
+    .discover-page {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .discover-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .discover-header p {
+        font-size: 1.1rem;
+    }
+
+    /* Large Grid Layout - Named Grid Areas (3 columns) */
+    .discover-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "cathedral cathedral palace"
+            "boqueron marte palace"
+            "boqueron mercado jardin"
+            "monumento mercado jardin"
+            "monumento joya joya";
+        gap: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.35rem;
+    }
+
+    .card-description {
+        font-size: 0.95rem;
+    }
+
+    /* Enhanced Image Hover Effect */
+    .card-figure {
+        position: relative;
+    }
+
+    .card-figure::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.3));
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .discover-card:hover .card-figure::after {
+        opacity: 1;
+    }
+
+    .card-figure img:hover {
+        transform: scale(1.08);
+        filter: brightness(1.05) contrast(1.05);
+    }
+}
