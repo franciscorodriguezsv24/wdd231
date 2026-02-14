@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our directory of local freelancers in San Salvador. Filter by category, availability, and price to find the perfect service provider.">
+    <meta name="author" content="Alejandro Rodriguez">
+    <meta property="og:title" content="Service Directory | SkillConnect SV">
+    <meta property="og:description" content="Find local freelancers for home repair, tutoring, design, pet care, photography and tech support.">
+    <meta property="og:image" content="images/og-image.webp">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Service Directory | SkillConnect SV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/directory.js" type="module"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.webp" alt="SkillConnect Logo" width="40" height="40">
+                <span class="logo-text">Skill<span>Connect</span></span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="post.html">Post Your Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="section-container">
+            <h1 class="section-title">Service Providers <span>Directory</span></h1>
+            <p class="section-subtitle">Find the right professional for your needs</p>
+
+            <!-- Controls -->
+            <div class="directory-controls">
+                <div class="search-bar">
+                    <span class="search-icon" aria-hidden="true">&#128269;</span>
+                    <input type="search" id="searchInput" placeholder="Search by name or skill..." aria-label="Search providers">
+                </div>
+                <div class="filters-row">
+                    <select id="categoryFilter" class="filter-select" aria-label="Filter by category">
+                        <option value="all">All Categories</option>
+                        <option value="home-repair">Home Repair</option>
+                        <option value="tutoring">Tutoring</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="pet-care">Pet Care</option>
+                        <option value="photography">Photography</option>
+                        <option value="tech-support">Tech Support</option>
+                    </select>
+                    <select id="availabilityFilter" class="filter-select" aria-label="Filter by availability">
+                        <option value="all">All Availability</option>
+                        <option value="Weekdays">Weekdays</option>
+                        <option value="Weekends">Weekends</option>
+                        <option value="Both">Both</option>
+                    </select>
+                    <select id="priceFilter" class="filter-select" aria-label="Filter by price range">
+                        <option value="all">All Prices</option>
+                        <option value="0-15">$0 - $15/hr</option>
+                        <option value="16-30">$16 - $30/hr</option>
+                        <option value="31-100">$31+/hr</option>
+                    </select>
+                    <select id="sortSelect" class="sort-select" aria-label="Sort providers">
+                        <option value="default">Sort By</option>
+                        <option value="rating-desc">Rating: High to Low</option>
+                        <option value="rating-asc">Rating: Low to High</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                    </select>
+                    <div class="view-toggle" role="group" aria-label="Toggle view">
+                        <button class="view-btn active" id="gridViewBtn" aria-pressed="true" title="Grid View">
+                            <span aria-hidden="true">&#9638;</span>
+                            <span class="sr-only">Grid View</span>
+                        </button>
+                        <button class="view-btn" id="listViewBtn" aria-pressed="false" title="List View">
+                            <span aria-hidden="true">&#9776;</span>
+                            <span class="sr-only">List View</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="results-info" id="resultsInfo"></p>
+
+            <!-- Providers Grid -->
+            <div class="providers-grid" id="providersGrid">
+                <!-- Generated by JS -->
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal-overlay" id="providerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">Skill<span>Connect</span> SV</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="post.html">Post Skills</a>
+                <a href="attributions.html">Attributions</a>
+                <a href="#" target="_blank">Demo Video (coming soon)</a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> SkillConnect SV | Alejandro Rodriguez | WDD 231</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
