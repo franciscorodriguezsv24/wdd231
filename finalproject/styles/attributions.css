@@ -1,0 +1,9 @@
+/* ===== Attributions Page Specific Styles ===== */
+.attributions-list a {
+    color: var(--primary-color);
+    transition: color var(--transition);
+}
+
+.attributions-list a:hover {
+    color: var(--primary-dark);
+}

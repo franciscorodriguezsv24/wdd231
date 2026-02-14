@@ -1043,7 +1043,7 @@ main {
     margin: 0 auto;
 }
 
-.attributions-list h3 {
+.attributions-list h2 {
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-sm);
     color: var(--primary-color);
