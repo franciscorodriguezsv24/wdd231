@@ -1,10 +1,10 @@
 /* ============================================================
-   Lima Chamber of Commerce — small.css (mobile-first, 320px+)
+   San Salvador Chamber of Commerce — small.css (mobile-first, 320px+)
    ============================================================ */
 
 :root {
     --primary: #0b3954;       /* deep ocean blue */
-    --secondary: #c81d25;     /* Peruvian red */
+    --secondary: #0033a0;     /* Salvadoran flag blue */
     --accent: #f4a261;        /* warm sand */
     --bg: #f7f9fb;
     --surface: #ffffff;

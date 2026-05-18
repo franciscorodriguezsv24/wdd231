@@ -1,19 +1,19 @@
 {
   "members": [
     {
-      "name": "Andean Brews Coffee Co.",
-      "address": "Av. Larco 456, Miraflores, Lima",
-      "phone": "(+51) 1 555-1010",
-      "website": "https://andeanbrews.example.com",
+      "name": "Cuscatlán Coffee Co.",
+      "address": "Paseo General Escalón 456, San Salvador",
+      "phone": "(+503) 2555-1010",
+      "website": "https://cuscatlancoffee.example.com",
       "image": "andean-brews.svg",
       "membership": 3,
       "category": "Food & Beverage",
-      "description": "Specialty coffee roastery sourcing beans from Peruvian highlands."
+      "description": "Specialty coffee roastery sourcing beans from the highlands of El Salvador."
     },
     {
-      "name": "Pacifico Marketing Group",
-      "address": "Calle Schell 210, Miraflores, Lima",
-      "phone": "(+51) 1 555-2020",
+      "name": "Pacífico Marketing Group",
+      "address": "Calle La Reforma 210, Colonia San Benito, San Salvador",
+      "phone": "(+503) 2555-2020",
       "website": "https://pacificomarketing.example.com",
       "image": "pacifico-marketing.svg",
       "membership": 3,
@@ -21,49 +21,49 @@
       "description": "Full-service digital marketing agency for local businesses."
     },
     {
-      "name": "Inca Tech Solutions",
-      "address": "Av. Javier Prado 1500, San Isidro, Lima",
-      "phone": "(+51) 1 555-3030",
-      "website": "https://incatech.example.com",
+      "name": "Izalco Tech Solutions",
+      "address": "Avenida Las Magnolias 1500, Colonia San Benito, San Salvador",
+      "phone": "(+503) 2555-3030",
+      "website": "https://izalcotech.example.com",
       "image": "inca-tech.svg",
       "membership": 2,
       "category": "Technology",
       "description": "Custom software development and IT consulting services."
     },
     {
-      "name": "Lima Artisan Bakery",
-      "address": "Jr. de la Union 789, Cercado de Lima",
-      "phone": "(+51) 1 555-4040",
-      "website": "https://limabakery.example.com",
+      "name": "Pupusería Artesanal La Ceiba",
+      "address": "Calle Rubén Darío 789, Centro Histórico, San Salvador",
+      "phone": "(+503) 2555-4040",
+      "website": "https://laceibapupuseria.example.com",
       "image": "lima-bakery.svg",
       "membership": 2,
       "category": "Food & Beverage",
-      "description": "Traditional Peruvian breads and pastries crafted daily."
+      "description": "Traditional Salvadoran pupusas and breads crafted fresh daily."
     },
     {
-      "name": "Costa Verde Realty",
-      "address": "Malecon Cisneros 320, Miraflores, Lima",
-      "phone": "(+51) 1 555-5050",
-      "website": "https://costaverderealty.example.com",
+      "name": "Costa del Sol Realty",
+      "address": "Boulevard del Hipódromo 320, Colonia San Benito, San Salvador",
+      "phone": "(+503) 2555-5050",
+      "website": "https://costadelsolrealty.example.com",
       "image": "costa-verde.svg",
       "membership": 1,
       "category": "Real Estate",
-      "description": "Residential and commercial property specialists in Lima."
+      "description": "Residential and commercial property specialists in El Salvador."
     },
     {
       "name": "Sol y Luna Travel",
-      "address": "Av. Arequipa 2450, Lince, Lima",
-      "phone": "(+51) 1 555-6060",
+      "address": "Avenida La Capilla 2450, Colonia San Benito, San Salvador",
+      "phone": "(+503) 2555-6060",
       "website": "https://solylunatravel.example.com",
       "image": "sol-y-luna.svg",
       "membership": 1,
       "category": "Travel & Tourism",
-      "description": "Guided tours across Peru, from Lima to Machu Picchu."
+      "description": "Guided tours across El Salvador, from beaches to Mayan ruins."
     },
     {
       "name": "Verde Vida Wellness",
-      "address": "Calle Berlin 145, Miraflores, Lima",
-      "phone": "(+51) 1 555-7070",
+      "address": "Calle El Mirador 145, Colonia Escalón, San Salvador",
+      "phone": "(+503) 2555-7070",
       "website": "https://verdevida.example.com",
       "image": "verde-vida.svg",
       "membership": 2,
@@ -71,10 +71,10 @@
       "description": "Yoga studio, holistic nutrition, and wellness coaching."
     },
     {
-      "name": "Andina Legal Advisors",
-      "address": "Av. Camino Real 1075, San Isidro, Lima",
-      "phone": "(+51) 1 555-8080",
-      "website": "https://andinalegal.example.com",
+      "name": "Cuscatleca Legal Advisors",
+      "address": "Alameda Roosevelt 1075, San Salvador",
+      "phone": "(+503) 2555-8080",
+      "website": "https://cuscatlecalegal.example.com",
       "image": "andina-legal.svg",
       "membership": 3,
       "category": "Legal Services",

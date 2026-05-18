@@ -1,0 +1,310 @@
+/* ============================================================
+   WDD 231 — Personal Home Page — small.css (mobile-first)
+   ============================================================ */
+
+:root {
+    --primary: #0b3954;
+    --secondary: #c81d25;
+    --accent: #f4a261;
+    --bg: #f4f6f9;
+    --surface: #ffffff;
+    --text: #1c1f24;
+    --muted: #5a6471;
+    --border: #d9dee3;
+    --completed: #2e7d32;
+    --not-completed: #b0bec5;
+
+    --font-body: 'Roboto', system-ui, sans-serif;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --radius: 8px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin: 0 0 0.5rem 0;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: var(--primary);
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    object-fit: cover;
+    background: #fff;
+}
+
+.profile span {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#hamburger-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+#hamburger-btn[aria-expanded="true"]::before {
+    content: "✕";
+}
+
+#hamburger-btn[aria-expanded="true"] {
+    font-size: 0;
+}
+
+#hamburger-btn[aria-expanded="true"]::before {
+    font-size: 1.2rem;
+}
+
+/* Mobile nav: hidden by default, shown via .open */
+#primary-nav {
+    display: none;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#primary-nav.open {
+    display: flex;
+}
+
+#primary-nav a {
+    color: #fff;
+    padding: 0.85rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-weight: 400;
+}
+
+#primary-nav a:hover,
+#primary-nav a:focus,
+#primary-nav a.active {
+    background-color: rgba(255, 255, 255, 0.12);
+    text-decoration: none;
+}
+
+/* ---------- Main ---------- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    color: var(--primary);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.general {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Cards ---------- */
+.card {
+    background-color: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    background-color: var(--primary);
+    color: #fff;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+}
+
+.card ul {
+    margin: 0;
+    padding: 1rem 1rem 1rem 2rem;
+    color: var(--muted);
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Location card */
+.country_info {
+    padding: 1rem;
+}
+
+.image-caption {
+    margin: 0;
+    text-align: center;
+}
+
+.country_img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+figcaption {
+    color: var(--muted);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* ---------- Certificates section ---------- */
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.resources button {
+    background-color: var(--surface);
+    color: var(--text);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.resources button:hover,
+.resources button:focus {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.resources button.active {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+#creditsSection {
+    padding: 0 1rem;
+    text-align: center;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+#coursesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.course {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--not-completed);
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    color: var(--text);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.course:hover,
+.course:focus {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    outline: none;
+}
+
+.course.completed {
+    border-left-color: var(--completed);
+    background-color: #e8f5e9;
+}
+
+/* ---------- Dialog ---------- */
+#course-details {
+    border: none;
+    border-radius: var(--radius);
+    padding: 0;
+    width: min(92vw, 480px);
+    background-color: var(--surface);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+#course-details::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#course-details .dialog-inner {
+    padding: 1.25rem;
+}
+
+#course-details h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+#course-details .close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--muted);
+    line-height: 1;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}

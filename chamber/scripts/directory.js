@@ -1,5 +1,5 @@
 // ============================================================
-// Lima Chamber of Commerce — directory.js
+// San Salvador Chamber of Commerce — directory.js
 // Loads members.json via fetch + async/await, renders cards,
 // supports grid/list toggle, and updates footer dates.
 // ============================================================

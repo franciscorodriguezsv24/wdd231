@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Rodriguez">
+    <meta name="description" content="WDD 231: Web Frontend Development I - Alejandro Rodriguez, San Salvador, El Salvador">
+    <title>WDD 231: Web Frontend Development I - Alejandro Rodriguez</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="WDD 231: Web Frontend Development I - Alejandro Rodriguez">
+    <meta property="og:description" content="Personal home page for the WDD 231 course at BYU-Idaho. Built by Alejandro Rodriguez from San Salvador, El Salvador.">
+    <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/images/social-preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alejandro Rodriguez - WDD 231">
+
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="profile" id="profile">
+            <img src="images/photo.svg" alt="Profile photo of Alejandro Rodriguez" class="profile_img">
+            <span>Alejandro Rodriguez</span>
+            <button id="hamburger-btn" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+        </div>
+
+        <nav id="primary-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber/directory.html">Chamber</a>
+            <a href="final/index.html">Final</a>
+            <a href="https://github.com/franciscorodriguezsv24/wdd231" target="_blank" rel="noopener">GitHub Profile</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="general">
+            <section class="card" id="courseWork">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>Build a personal home page using semantic HTML and responsive CSS.</li>
+                    <li>Develop a Chamber of Commerce multi-page site.</li>
+                    <li>Use JavaScript, fetch, and JSON to build dynamic content.</li>
+                </ul>
+            </section>
+
+            <section class="card" id="location">
+                <h2>San Salvador, El Salvador</h2>
+                <div class="country_info">
+                    <figure class="image-caption">
+                        <img src="images/san-salvador.svg" alt="Skyline of San Salvador, El Salvador" class="country_img" id="country_img">
+                        <figcaption><em>San Salvador, the capital city of El Salvador</em></figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+
+        <div>
+            <section class="card" id="certificates">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="resources">
+                    <button id="all" class="active" title="Show all courses" type="button">All Courses</button>
+                    <button id="wdd" title="Only WDD courses" type="button">WDD Courses</button>
+                    <button id="cse" title="Only CSE courses" type="button">CSE Courses</button>
+                </div>
+                <section id="creditsSection"></section>
+                <section id="coursesList"></section>
+            </section>
+        </div>
+    </main>
+
+    <dialog id="course-details"></dialog>
+
+    <footer>
+        <p><span id="currentyear"></span> ✨ Alejandro Rodriguez ✨ San Salvador, El Salvador</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
