@@ -75,8 +75,11 @@ a:hover, a:focus {
     padding: 4px;
 }
 
-.brand-text h1 {
+.brand-text .brand-name {
+    font-family: var(--font-heading);
     font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2;
     margin: 0;
     color: #fff;
 }
@@ -168,9 +171,10 @@ main {
     margin-bottom: 1rem;
 }
 
-.page-intro h2 {
+.page-intro h1 {
     color: var(--primary);
     font-size: 1.6rem;
+    margin: 0 0 0.5rem 0;
 }
 
 .page-intro p {

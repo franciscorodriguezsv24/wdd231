@@ -30,11 +30,11 @@
         padding: 0.5rem 1rem;
     }
 
-    .brand-text h1 {
+    .brand-text .brand-name {
         font-size: 1.4rem;
     }
 
-    .page-intro h2 {
+    .page-intro h1 {
         font-size: 2rem;
     }
 
