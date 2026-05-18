@@ -1,0 +1,367 @@
+/* ============================================================
+   Lima Chamber of Commerce — small.css (mobile-first, 320px+)
+   ============================================================ */
+
+:root {
+    --primary: #0b3954;       /* deep ocean blue */
+    --secondary: #c81d25;     /* Peruvian red */
+    --accent: #f4a261;        /* warm sand */
+    --bg: #f7f9fb;
+    --surface: #ffffff;
+    --text: #1c1f24;
+    --muted: #5a6471;
+    --border: #d9dee3;
+    --gold: #d4af37;
+    --silver: #a8a8a8;
+    --member: #6c9a8b;
+
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', system-ui, sans-serif;
+
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --radius: 8px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    margin: 0 0 0.5rem 0;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    background-color: var(--primary);
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.header-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo {
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.brand-text h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #fff;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ---------- Menu toggle (hamburger) ---------- */
+.menu-toggle {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* ---------- Primary navigation ---------- */
+.primary-nav {
+    grid-column: 1 / -1;
+    display: none;
+}
+
+.primary-nav.open {
+    display: block;
+}
+
+.primary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-nav a {
+    display: block;
+    padding: 0.75rem 0.5rem;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-weight: 600;
+}
+
+.primary-nav a.active,
+.primary-nav a:hover,
+.primary-nav a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+/* ---------- Main / page intro ---------- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.page-intro h2 {
+    color: var(--primary);
+    font-size: 1.6rem;
+}
+
+.page-intro p {
+    color: var(--muted);
+    max-width: 60ch;
+    margin: 0 auto;
+}
+
+/* ---------- View controls ---------- */
+.view-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.view-label {
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.view-btn {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.view-btn:hover,
+.view-btn:focus {
+    border-color: var(--primary);
+}
+
+.view-btn.active {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.view-btn .icon {
+    margin-right: 0.25rem;
+}
+
+/* ---------- Members: grid view (mobile-first) ---------- */
+.members {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+}
+
+.member-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.member-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.member-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto;
+    background: var(--bg);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.member-card h3 {
+    color: var(--primary);
+    font-size: 1.05rem;
+    margin: 0.25rem 0;
+}
+
+.member-card .address,
+.member-card .phone,
+.member-card .category {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.member-card .website {
+    display: inline-block;
+    margin-top: 0.25rem;
+    font-weight: 600;
+}
+
+.member-card .badge {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    align-self: center;
+    justify-self: center;
+}
+
+.badge-gold   { background-color: var(--gold); color: #1c1f24; }
+.badge-silver { background-color: var(--silver); color: #1c1f24; }
+.badge-member { background-color: var(--member); }
+
+/* ---------- Members: list view ---------- */
+.members.list {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--surface);
+}
+
+.members.list .member-card {
+    grid-template-columns: 1fr;
+    text-align: left;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    box-shadow: none;
+    padding: 0.75rem 1rem;
+    transform: none;
+}
+
+.members.list .member-card:last-child {
+    border-bottom: none;
+}
+
+.members.list .member-card img {
+    display: none;
+}
+
+.members.list .member-card h3 {
+    margin: 0;
+}
+
+.members.list .member-card .badge {
+    justify-self: start;
+    margin-top: 0.25rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    background-color: var(--primary);
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.footer-contact h3 {
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
+
+.site-footer address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.site-footer a {
+    color: var(--accent);
+}
+
+.footer-project p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}

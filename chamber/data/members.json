@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "name": "Andean Brews Coffee Co.",
+      "address": "Av. Larco 456, Miraflores, Lima",
+      "phone": "(+51) 1 555-1010",
+      "website": "https://andeanbrews.example.com",
+      "image": "andean-brews.svg",
+      "membership": 3,
+      "category": "Food & Beverage",
+      "description": "Specialty coffee roastery sourcing beans from Peruvian highlands."
+    },
+    {
+      "name": "Pacifico Marketing Group",
+      "address": "Calle Schell 210, Miraflores, Lima",
+      "phone": "(+51) 1 555-2020",
+      "website": "https://pacificomarketing.example.com",
+      "image": "pacifico-marketing.svg",
+      "membership": 3,
+      "category": "Marketing",
+      "description": "Full-service digital marketing agency for local businesses."
+    },
+    {
+      "name": "Inca Tech Solutions",
+      "address": "Av. Javier Prado 1500, San Isidro, Lima",
+      "phone": "(+51) 1 555-3030",
+      "website": "https://incatech.example.com",
+      "image": "inca-tech.svg",
+      "membership": 2,
+      "category": "Technology",
+      "description": "Custom software development and IT consulting services."
+    },
+    {
+      "name": "Lima Artisan Bakery",
+      "address": "Jr. de la Union 789, Cercado de Lima",
+      "phone": "(+51) 1 555-4040",
+      "website": "https://limabakery.example.com",
+      "image": "lima-bakery.svg",
+      "membership": 2,
+      "category": "Food & Beverage",
+      "description": "Traditional Peruvian breads and pastries crafted daily."
+    },
+    {
+      "name": "Costa Verde Realty",
+      "address": "Malecon Cisneros 320, Miraflores, Lima",
+      "phone": "(+51) 1 555-5050",
+      "website": "https://costaverderealty.example.com",
+      "image": "costa-verde.svg",
+      "membership": 1,
+      "category": "Real Estate",
+      "description": "Residential and commercial property specialists in Lima."
+    },
+    {
+      "name": "Sol y Luna Travel",
+      "address": "Av. Arequipa 2450, Lince, Lima",
+      "phone": "(+51) 1 555-6060",
+      "website": "https://solylunatravel.example.com",
+      "image": "sol-y-luna.svg",
+      "membership": 1,
+      "category": "Travel & Tourism",
+      "description": "Guided tours across Peru, from Lima to Machu Picchu."
+    },
+    {
+      "name": "Verde Vida Wellness",
+      "address": "Calle Berlin 145, Miraflores, Lima",
+      "phone": "(+51) 1 555-7070",
+      "website": "https://verdevida.example.com",
+      "image": "verde-vida.svg",
+      "membership": 2,
+      "category": "Health & Wellness",
+      "description": "Yoga studio, holistic nutrition, and wellness coaching."
+    },
+    {
+      "name": "Andina Legal Advisors",
+      "address": "Av. Camino Real 1075, San Isidro, Lima",
+      "phone": "(+51) 1 555-8080",
+      "website": "https://andinalegal.example.com",
+      "image": "andina-legal.svg",
+      "membership": 3,
+      "category": "Legal Services",
+      "description": "Business law, contracts, and corporate compliance experts."
+    }
+  ]
+}

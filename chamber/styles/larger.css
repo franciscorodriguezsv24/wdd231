@@ -1,0 +1,89 @@
+/* ============================================================
+   Lima Chamber of Commerce — larger.css (tablet & desktop)
+   ============================================================ */
+
+@media (min-width: 640px) {
+    .header-inner {
+        grid-template-columns: auto 1fr;
+        padding: 1rem 1.5rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .primary-nav {
+        display: block !important;
+        grid-column: auto;
+        justify-self: end;
+    }
+
+    .primary-nav ul {
+        flex-direction: row;
+        gap: 0.25rem;
+        padding: 0;
+    }
+
+    .primary-nav a {
+        border-top: none;
+        border-radius: 6px;
+        padding: 0.5rem 1rem;
+    }
+
+    .brand-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .page-intro h2 {
+        font-size: 2rem;
+    }
+
+    /* Two-column grid */
+    .members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Two-column footer */
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .footer-project {
+        text-align: right;
+    }
+}
+
+@media (min-width: 960px) {
+    .members.grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .member-card {
+        padding: 1.5rem;
+    }
+
+    .member-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* List view: tabular look on wider screens */
+    .members.list .member-card {
+        grid-template-columns: 2fr 2fr 1.5fr 1.5fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .members.list .member-card h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 1.5rem 2rem;
+    }
+}

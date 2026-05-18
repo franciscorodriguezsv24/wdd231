@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#fff3e0"/>
+  <ellipse cx="50" cy="60" rx="32" ry="20" fill="#c87b3c"/>
+  <ellipse cx="50" cy="56" rx="32" ry="20" fill="#e29a52"/>
+  <path d="M22 50 q14 -16 28 0 M50 50 q14 -16 28 0" stroke="#8b4513" stroke-width="2" fill="none"/>
+  <circle cx="40" cy="55" r="2" fill="#fff"/>
+  <circle cx="58" cy="58" r="2" fill="#fff"/>
+  <text x="50" y="92" text-anchor="middle" font-family="serif" font-size="9" fill="#8b4513" font-weight="bold">BAKERY</text>
+</svg>

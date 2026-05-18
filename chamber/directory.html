@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Directory | Lima Chamber of Commerce</title>
+    <meta name="description" content="Browse the Lima Chamber of Commerce business directory. Discover local member companies across Peru organized by membership level.">
+    <meta name="author" content="Alejandro Rodriguez">
+
+    <!-- Facebook Open Graph meta -->
+    <meta property="og:title" content="Directory | Lima Chamber of Commerce">
+    <meta property="og:description" content="Find verified local businesses that are part of the Lima Chamber of Commerce.">
+    <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+
+    <!-- Stylesheets: normalize first, then small (mobile-first), then larger -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img src="images/favicon.svg" alt="Lima Chamber logo" class="logo">
+                <div class="brand-text">
+                    <h1>Lima Chamber</h1>
+                    <p class="tagline">of Commerce</p>
+                </div>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h2>Business Directory</h2>
+            <p>Explore the local businesses and organizations that proudly belong to the Lima Chamber of Commerce.</p>
+        </section>
+
+        <section class="view-controls" aria-label="Layout view selection">
+            <span class="view-label">View:</span>
+            <button id="grid-view" class="view-btn active" type="button" aria-pressed="true" aria-label="Grid view">
+                <span class="icon">▦</span> Grid
+            </button>
+            <button id="list-view" class="view-btn" type="button" aria-pressed="false" aria-label="List view">
+                <span class="icon">≡</span> List
+            </button>
+        </section>
+
+        <section id="members" class="members grid" aria-live="polite">
+            <!-- Member cards inserted via JavaScript -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <h3>Lima Chamber of Commerce</h3>
+                <address>
+                    Av. Larco 1234<br>
+                    Miraflores, Lima 15074, Peru<br>
+                    <a href="mailto:info@limachamber.example.com">info@limachamber.example.com</a><br>
+                    (+51) 1 555-0000
+                </address>
+            </div>
+
+            <div class="footer-project">
+                <p>WDD 231 &mdash; Web Frontend Development</p>
+                <p>Alejandro Rodriguez &mdash; Peru</p>
+                <p>&copy; <span id="copyright-year"></span> Lima Chamber of Commerce</p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
