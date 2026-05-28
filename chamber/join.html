@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | San Salvador Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership to the San Salvador Chamber of Commerce. Choose between Member, Bronze, Silver, and Gold tiers with exclusive benefits.">
+    <meta name="author" content="Alejandro Rodriguez">
+
+    <!-- Facebook Open Graph meta -->
+    <meta property="og:title" content="Join | San Salvador Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the San Salvador Chamber of Commerce. Explore Member, Bronze, Silver, and Gold benefits.">
+    <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img src="images/favicon.svg" alt="San Salvador Chamber logo" class="logo">
+                <div class="brand-text">
+                    <p class="brand-name">San Salvador Chamber</p>
+                    <p class="tagline">of Commerce</p>
+                </div>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="join-layout">
+            <!-- Application Form -->
+            <section class="join-form-section" aria-labelledby="application-heading">
+                <h2 id="application-heading">Membership Application</h2>
+
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label>
+                        First Name *
+                        <input type="text" name="firstName" id="firstName"
+                               title="Applicant first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label>
+                        Last Name *
+                        <input type="text" name="lastName" id="lastName"
+                               title="Applicant last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>
+                        Organization Title
+                        <input type="text" name="orgTitle" id="orgTitle"
+                               title="Your title in the organization (min 7 chars: letters, spaces, hyphens)"
+                               autocomplete="organization-title"
+                               pattern="[A-Za-z\-\s]{7,}">
+                    </label>
+
+                    <label>
+                        Email *
+                        <input type="email" name="email" id="email"
+                               title="Your email address" autocomplete="email"
+                               placeholder="example@domain.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone *
+                        <input type="tel" name="phone" id="phone"
+                               title="Your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+                    <label>
+                        Organization Name *
+                        <input type="text" name="orgName" id="orgName"
+                               title="Your business or organization name"
+                               autocomplete="organization" required>
+                    </label>
+
+                    <fieldset class="membership-options">
+                        <legend>Membership Level *</legend>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="np" required>
+                            NP (Non-Profit — Free)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <label>
+                        Organization Description
+                        <textarea name="description" id="description"
+                                  title="Briefly describe your business or organization"
+                                  rows="4"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit" class="cta-button">Apply Now</button>
+                </form>
+            </section>
+
+            <!-- Membership Cards -->
+            <section class="membership-cards" aria-labelledby="benefits-heading">
+                <h2 id="benefits-heading">Membership Benefits</h2>
+
+                <article class="m-card" data-card="np">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations. Free to join.</p>
+                    <button type="button" class="learn-btn" data-target="np-modal">Learn More</button>
+                </article>
+
+                <article class="m-card" data-card="bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry-level membership with essential perks.</p>
+                    <button type="button" class="learn-btn" data-target="bronze-modal">Learn More</button>
+                </article>
+
+                <article class="m-card" data-card="silver">
+                    <h3>Silver Membership</h3>
+                    <p>Mid-tier benefits including event discounts.</p>
+                    <button type="button" class="learn-btn" data-target="silver-modal">Learn More</button>
+                </article>
+
+                <article class="m-card gold-card" data-card="gold">
+                    <h3>Gold Membership</h3>
+                    <p>Premium membership with all benefits and spotlight ads.</p>
+                    <button type="button" class="learn-btn" data-target="gold-modal">Learn More</button>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- Membership Detail Modals -->
+    <dialog id="np-modal" class="benefits-modal">
+        <h3>NP Membership Benefits</h3>
+        <ul>
+            <li>Free listing in the chamber directory</li>
+            <li>Access to community events</li>
+            <li>Monthly newsletter subscription</li>
+            <li>Networking introductions for non-profits</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal" class="benefits-modal">
+        <h3>Bronze Membership Benefits</h3>
+        <ul>
+            <li>All NP benefits</li>
+            <li>Discounted training workshops</li>
+            <li>Quarterly business luncheons</li>
+            <li>Listing with category and contact info</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal" class="benefits-modal">
+        <h3>Silver Membership Benefits</h3>
+        <ul>
+            <li>All Bronze benefits</li>
+            <li>50% discount on event registration</li>
+            <li>Featured directory placement</li>
+            <li>Monthly social media mention</li>
+            <li>Access to private member forum</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal" class="benefits-modal">
+        <h3>Gold Membership Benefits</h3>
+        <ul>
+            <li>All Silver benefits</li>
+            <li>Home page spotlight rotation</li>
+            <li>Free event sponsorship slot annually</li>
+            <li>Dedicated press release distribution</li>
+            <li>Priority access to chamber leadership</li>
+            <li>Logo on chamber publications</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <h3>San Salvador Chamber of Commerce</h3>
+                <address>
+                    Calle Arce 1234<br>
+                    Colonia Escalón, San Salvador, El Salvador<br>
+                    <a href="mailto:info@sschamber.example.com">info@sschamber.example.com</a><br>
+                    (+503) 2555-0000
+                </address>
+            </div>
+
+            <div class="footer-project">
+                <p>WDD 231 &mdash; Web Frontend Development</p>
+                <p>Alejandro Rodriguez &mdash; El Salvador</p>
+                <p>&copy; <span id="copyright-year"></span> San Salvador Chamber of Commerce</p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/join.js"></script>
+</body>
+</html>

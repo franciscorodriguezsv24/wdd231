@@ -369,3 +369,521 @@ main {
     margin: 0.25rem 0;
     font-size: 0.9rem;
 }
+
+/* ============================================================
+   Home page sections (index.html)
+   ============================================================ */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.hero-content {
+    background: linear-gradient(180deg, rgba(11, 57, 84, 0.85), rgba(11, 57, 84, 0.95));
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.hero-content p {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #e9914a;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* ---------- Info grid (events + weather) ---------- */
+.info-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.events,
+.weather {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 0 0 0.75rem 0;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.4rem;
+}
+
+.events ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.events li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.events li:last-child {
+    border-bottom: none;
+}
+
+.events strong {
+    color: var(--text);
+    font-size: 1rem;
+}
+
+/* ---------- Weather ---------- */
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-current img {
+    width: 70px;
+    height: 70px;
+}
+
+.weather-current .temp {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary);
+}
+
+.weather-current .desc {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.weather-forecast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    padding-top: 0.75rem;
+}
+
+.forecast-day {
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 0.5rem 0.25rem;
+}
+
+.forecast-day .day {
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary);
+    font-size: 0.85rem;
+}
+
+.forecast-day img {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+.forecast-day .temp {
+    margin: 0;
+    font-weight: 700;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+/* ---------- Spotlights ---------- */
+.spotlights {
+    margin-bottom: 1.5rem;
+}
+
+.spotlights > h2 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.spotlight-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.spotlight-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 auto;
+    background: var(--bg);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.spotlight-card h3 {
+    color: var(--primary);
+    margin: 0.25rem 0;
+}
+
+.spotlight-card .tier {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 0.15rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    justify-self: center;
+    margin: 0;
+}
+
+.spotlight-card .address,
+.spotlight-card .phone {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.spotlight-card a {
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+
+/* ============================================================
+   Join page (join.html)
+   ============================================================ */
+
+main > h1 {
+    color: var(--primary);
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0.5rem 0 1rem;
+}
+
+.join-layout {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.join-form-section,
+.membership-cards {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.join-form-section h2,
+.membership-cards h2 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.4rem;
+}
+
+.join-form {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.join-form label {
+    display: block;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.25rem;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: border-color 0.2s;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: var(--surface);
+}
+
+.join-form input:required:invalid:not(:placeholder-shown) {
+    border-color: var(--secondary);
+}
+
+.join-form input:required:valid {
+    border-color: var(--completed, #2e7d32);
+}
+
+.join-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.membership-options {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin: 0;
+}
+
+.membership-options legend {
+    font-weight: 700;
+    color: var(--primary);
+    padding: 0 0.5rem;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.join-form .cta-button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+/* Membership cards */
+.m-card {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--member);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    animation: cardSlideIn 0.6s ease-out;
+}
+
+.m-card[data-card="bronze"] {
+    border-left-color: #cd7f32;
+}
+
+.m-card[data-card="silver"] {
+    border-left-color: var(--silver);
+}
+
+.m-card[data-card="gold"] {
+    border-left-color: var(--gold);
+}
+
+.m-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.m-card p {
+    margin: 0 0 0.75rem 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.learn-btn {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.learn-btn:hover,
+.learn-btn:focus {
+    background-color: #082b3f;
+}
+
+@keyframes cardSlideIn {
+    from { opacity: 0; transform: translateX(-12px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Benefits modal */
+.benefits-modal {
+    border: none;
+    border-radius: var(--radius);
+    padding: 0;
+    width: min(92vw, 480px);
+    background-color: var(--surface);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    color: var(--text);
+}
+
+.benefits-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.benefits-modal h3,
+.benefits-modal ul,
+.benefits-modal .close-modal {
+    padding: 0 1.25rem;
+}
+
+.benefits-modal h3 {
+    color: var(--primary);
+    margin: 1.25rem 0 0.5rem;
+}
+
+.benefits-modal ul {
+    margin: 0 0 1rem 0;
+    padding-left: 2.5rem;
+    color: var(--muted);
+}
+
+.benefits-modal ul li {
+    padding: 0.3rem 0;
+}
+
+.benefits-modal .close-modal {
+    display: block;
+    margin: 0 1.25rem 1.25rem auto;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ============================================================
+   Thank You page (thankyou.html)
+   ============================================================ */
+
+.thankyou-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thankyou-card h2 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.4rem;
+    margin-top: 0;
+}
+
+.submission-details {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1rem;
+    background-color: var(--bg);
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0 1.5rem;
+}
+
+.submission-details dt {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.submission-details dd {
+    margin: 0;
+    color: var(--text);
+    word-break: break-word;
+}

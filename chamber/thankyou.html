@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | San Salvador Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying to the San Salvador Chamber of Commerce. Your application details are confirmed below.">
+    <meta name="author" content="Alejandro Rodriguez">
+
+    <meta property="og:title" content="Thank You | San Salvador Chamber of Commerce">
+    <meta property="og:description" content="Thank you for applying to join the San Salvador Chamber of Commerce.">
+    <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img src="images/favicon.svg" alt="San Salvador Chamber logo" class="logo">
+                <div class="brand-text">
+                    <p class="brand-name">San Salvador Chamber</p>
+                    <p class="tagline">of Commerce</p>
+                </div>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Thank You for Applying!</h1>
+
+        <section class="thankyou-card" aria-labelledby="confirmation-heading">
+            <h2 id="confirmation-heading">Application Received</h2>
+            <p>We appreciate your interest in joining the San Salvador Chamber of Commerce. Our membership team will review your application and contact you within 2&ndash;3 business days.</p>
+            <p>Below is a summary of the information you submitted:</p>
+
+            <dl id="submission-details" class="submission-details">
+                <!-- populated by thankyou.js -->
+            </dl>
+
+            <a href="index.html" class="cta-button">Back to Home</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <h3>San Salvador Chamber of Commerce</h3>
+                <address>
+                    Calle Arce 1234<br>
+                    Colonia Escalón, San Salvador, El Salvador<br>
+                    <a href="mailto:info@sschamber.example.com">info@sschamber.example.com</a><br>
+                    (+503) 2555-0000
+                </address>
+            </div>
+
+            <div class="footer-project">
+                <p>WDD 231 &mdash; Web Frontend Development</p>
+                <p>Alejandro Rodriguez &mdash; El Salvador</p>
+                <p>&copy; <span id="copyright-year"></span> San Salvador Chamber of Commerce</p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/thankyou.js"></script>
+</body>
+</html>

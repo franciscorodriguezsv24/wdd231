@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | San Salvador Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the San Salvador Chamber of Commerce. Discover local events, weather, and featured member businesses across El Salvador.">
+    <meta name="author" content="Alejandro Rodriguez">
+
+    <!-- Facebook Open Graph meta -->
+    <meta property="og:title" content="Home | San Salvador Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the San Salvador Chamber of Commerce. Discover local events, weather, and featured member businesses.">
+    <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img src="images/favicon.svg" alt="San Salvador Chamber logo" class="logo">
+                <div class="brand-text">
+                    <p class="brand-name">San Salvador Chamber</p>
+                    <p class="tagline">of Commerce</p>
+                </div>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">San Salvador Chamber of Commerce Home</h1>
+
+        <!-- Hero section with CTA -->
+        <section class="hero" aria-label="Welcome banner">
+            <picture>
+                <img src="images/hero.svg" alt="Skyline of San Salvador at sunset with the El Boquerón volcano" class="hero-img">
+            </picture>
+            <div class="hero-content">
+                <h2>Grow Your Business in San Salvador</h2>
+                <p>Connect with local entrepreneurs, attend networking events, and gain access to exclusive member benefits.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Two-column row: events + weather -->
+        <div class="info-grid">
+            <section class="card events" aria-labelledby="events-heading">
+                <h2 id="events-heading">Current Events</h2>
+                <ul>
+                    <li>
+                        <strong>Networking Breakfast</strong><br>
+                        <time datetime="2026-06-12">June 12, 2026</time> &mdash; Hotel Sheraton Presidente
+                    </li>
+                    <li>
+                        <strong>Small Business Expo</strong><br>
+                        <time datetime="2026-06-25">June 25, 2026</time> &mdash; Centro Internacional de Ferias y Convenciones
+                    </li>
+                    <li>
+                        <strong>Digital Marketing Workshop</strong><br>
+                        <time datetime="2026-07-08">July 8, 2026</time> &mdash; Online webinar
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card weather" aria-labelledby="weather-heading">
+                <h2 id="weather-heading">Local Weather</h2>
+                <div class="weather-current">
+                    <img id="weather-icon" src="" alt="">
+                    <div>
+                        <p class="temp"><span id="current-temp">--</span>&deg;C</p>
+                        <p id="weather-desc" class="desc">Loading weather...</p>
+                    </div>
+                </div>
+                <div class="weather-forecast" id="forecast" aria-label="Three-day forecast">
+                    <!-- Forecast cards inserted via JS -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Spotlights -->
+        <section class="spotlights" aria-labelledby="spotlights-heading">
+            <h2 id="spotlights-heading">Member Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-grid">
+                <!-- Spotlight cards inserted via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <h3>San Salvador Chamber of Commerce</h3>
+                <address>
+                    Calle Arce 1234<br>
+                    Colonia Escalón, San Salvador, El Salvador<br>
+                    <a href="mailto:info@sschamber.example.com">info@sschamber.example.com</a><br>
+                    (+503) 2555-0000
+                </address>
+            </div>
+
+            <div class="footer-project">
+                <p>WDD 231 &mdash; Web Frontend Development</p>
+                <p>Alejandro Rodriguez &mdash; El Salvador</p>
+                <p>&copy; <span id="copyright-year"></span> San Salvador Chamber of Commerce</p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/home.js"></script>
+</body>
+</html>
