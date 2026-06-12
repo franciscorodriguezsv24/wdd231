@@ -847,6 +847,124 @@ main > h1 {
 }
 
 /* ============================================================
+   Discover page (discover.html)
+   ============================================================ */
+
+/* ---------- Visit message ---------- */
+.visit-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #fff4e6;
+    border: 1px solid var(--accent);
+    border-left: 5px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+    color: var(--text);
+}
+
+.visit-message.hidden {
+    display: none;
+}
+
+.visit-message p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.visit-message .close-visit {
+    background: transparent;
+    border: none;
+    color: var(--primary);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.25rem;
+}
+
+/* ---------- Cards: small screens (320px–640px) ----------
+   Single-column stack using named grid areas. */
+.discover-cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    margin-bottom: 2rem;
+}
+
+.discover-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+}
+
+.discover-card h2 {
+    color: var(--primary);
+    font-size: 1.15rem;
+    margin: 0;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.4rem;
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.discover-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.discover-card .learn-more {
+    justify-self: start;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.discover-card .learn-more:hover,
+.discover-card .learn-more:focus {
+    background-color: #082b3f;
+}
+
+/* ============================================================
    Thank You page (thankyou.html)
    ============================================================ */
 

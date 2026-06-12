@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Directory | San Salvador Chamber of Commerce</title>
-    <meta name="description" content="Browse the San Salvador Chamber of Commerce business directory. Discover local member companies across El Salvador organized by membership level.">
+    <title>Discover | San Salvador Chamber of Commerce</title>
+    <meta name="description" content="Discover eight points of interest in and around San Salvador, El Salvador — from El Boquerón volcano to Lake Coatepeque and the historic city center.">
     <meta name="author" content="Alejandro Rodriguez">
 
     <!-- Facebook Open Graph meta -->
-    <meta property="og:title" content="Directory | San Salvador Chamber of Commerce">
-    <meta property="og:description" content="Find verified local businesses that are part of the San Salvador Chamber of Commerce.">
+    <meta property="og:title" content="Discover | San Salvador Chamber of Commerce">
+    <meta property="og:description" content="Explore must-see attractions and points of interest around San Salvador, El Salvador.">
     <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/images/favicon.svg">
-    <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Discover data + behavior (module so we can import the JSON data) -->
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -49,32 +52,26 @@
             <nav id="primary-nav" class="primary-nav" aria-label="Primary">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="discover-layout">
         <section class="page-intro">
-            <h1>Business Directory</h1>
-            <p>Explore the local businesses and organizations that proudly belong to the San Salvador Chamber of Commerce.</p>
+            <h1>Discover San Salvador</h1>
+            <p>Eight unforgettable places to explore in and around El Salvador's vibrant capital.</p>
         </section>
 
-        <section class="view-controls" aria-label="Layout view selection">
-            <span class="view-label">View:</span>
-            <button id="grid-view" class="view-btn active" type="button" aria-pressed="true" aria-label="Grid view">
-                <span class="icon">▦</span> Grid
-            </button>
-            <button id="list-view" class="view-btn" type="button" aria-pressed="false" aria-label="List view">
-                <span class="icon">≡</span> List
-            </button>
-        </section>
+        <aside id="visit-message" class="visit-message" aria-live="polite">
+            <!-- Visit message injected by JavaScript -->
+        </aside>
 
-        <section id="members" class="members grid" aria-live="polite">
-            <!-- Member cards inserted via JavaScript -->
+        <section id="discover-cards" class="discover-cards" aria-label="Points of interest">
+            <!-- Cards injected via JavaScript from data/discover.mjs -->
         </section>
     </main>
 
@@ -98,7 +95,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="scripts/directory.js"></script>
 </body>
 </html>

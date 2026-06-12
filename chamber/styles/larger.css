@@ -177,3 +177,56 @@
     .m-card:nth-child(3) { animation-delay: 0.30s; }
     .m-card:nth-child(4) { animation-delay: 0.45s; }
 }
+
+/* ============================================================
+   Discover page responsive (discover.html)
+   Named grid areas rearrange the 8 cards into a distinct mosaic
+   at each breakpoint — not just additional columns.
+   ============================================================ */
+
+/* ---------- Medium screens (641px–1024px) ----------
+   Six-column mosaic: a row of three, a row of two wide cards,
+   then a row of three. */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-cards {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "card1 card1 card2 card2 card3 card3"
+            "card4 card4 card4 card5 card5 card5"
+            "card6 card6 card7 card7 card8 card8";
+    }
+
+    /* Image hover effect — medium and up only (not mobile) */
+    .discover-card img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .discover-card:hover img {
+        transform: scale(1.08);
+        filter: saturate(1.3) brightness(1.05);
+    }
+}
+
+/* ---------- Large screens (1025px and above) ----------
+   Four-column mosaic where each row mixes single and double-width
+   cards, so the rhythm differs from both the mobile stack and the
+   medium six-column layout. */
+@media (min-width: 1025px) {
+    .discover-cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card1 card2 card3"
+            "card4 card5 card5 card6"
+            "card7 card7 card8 card8";
+    }
+
+    /* Image hover effect — large view (not mobile) */
+    .discover-card img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .discover-card:hover img {
+        transform: scale(1.08);
+        filter: saturate(1.3) brightness(1.05);
+    }
+}
