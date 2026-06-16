@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alejandro Rodriguez">
+  <meta name="description"
+    content="SkillConnect SV connects neighbors in El Salvador with trusted local freelancers — plumbers, tutors, designers, photographers, pet sitters and more.">
+  <title>SkillConnect SV | Find Trusted Local Freelancers in El Salvador</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <meta property="og:title" content="SkillConnect SV | Find Trusted Local Freelancers in El Salvador">
+  <meta property="og:description"
+    content="Browse, compare and connect with skilled local freelancers across El Salvador.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/final/">
+  <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/final/images/hero.svg">
+  <meta property="og:site_name" content="SkillConnect SV">
+
+  <script type="module" src="scripts/home.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrapper header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span class="brand-name">Skill<span>Connect</span> SV</span>
+      </a>
+      <button type="button" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" aria-label="Primary">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="directory.html">Find Providers</a>
+        <a href="post.html">Post Your Skills</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrapper hero-grid">
+        <div>
+          <h1>Trusted local talent, just around the corner</h1>
+          <p class="lead">
+            SkillConnect SV brings together El Salvador's skilled freelancers and the neighbors who
+            need them — from plumbers and tutors to designers, photographers and pet sitters.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="directory.html">Find a provider</a>
+            <a class="btn btn-outline" href="post.html">Offer your skills</a>
+          </div>
+        </div>
+        <img class="hero-img" src="images/hero.svg"
+          alt="Illustration of neighbors connecting with local skilled freelancers"
+          width="600" height="460">
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+      <div class="wrapper">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Finding reliable help in your community takes three simple steps.</p>
+        </div>
+        <div class="grid steps">
+          <article class="step">
+            <span class="step-num">1</span>
+            <h3>Browse the directory</h3>
+            <p>Search and filter local freelancers by category, availability and rating.</p>
+          </article>
+          <article class="step">
+            <span class="step-num">2</span>
+            <h3>Compare providers</h3>
+            <p>Open any profile to review skills, experience, pricing and verified reviews.</p>
+          </article>
+          <article class="step">
+            <span class="step-num">3</span>
+            <h3>Connect directly</h3>
+            <p>Reach out by phone or email — no fees, no middlemen, just neighbors helping neighbors.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section alt">
+      <div class="wrapper">
+        <div class="section-head">
+          <h2>Browse by category</h2>
+          <p>Whatever you need done, there's a local pro ready to help.</p>
+        </div>
+        <div class="grid categories" id="category-grid">
+          <a class="category-card" href="directory.html" data-category="Home Repair">
+            <img src="images/categories/home-repair.svg" alt="" width="48" height="48">
+            <h3>Home Repair</h3>
+            <p class="count">Loading…</p>
+          </a>
+          <a class="category-card" href="directory.html" data-category="Tutoring">
+            <img src="images/categories/tutoring.svg" alt="" width="48" height="48">
+            <h3>Tutoring</h3>
+            <p class="count">Loading…</p>
+          </a>
+          <a class="category-card" href="directory.html" data-category="Graphic Design">
+            <img src="images/categories/graphic-design.svg" alt="" width="48" height="48">
+            <h3>Graphic Design</h3>
+            <p class="count">Loading…</p>
+          </a>
+          <a class="category-card" href="directory.html" data-category="Photography">
+            <img src="images/categories/photography.svg" alt="" width="48" height="48">
+            <h3>Photography</h3>
+            <p class="count">Loading…</p>
+          </a>
+          <a class="category-card" href="directory.html" data-category="Pet Care">
+            <img src="images/categories/pet-care.svg" alt="" width="48" height="48">
+            <h3>Pet Care</h3>
+            <p class="count">Loading…</p>
+          </a>
+          <a class="category-card" href="directory.html" data-category="Tech Support">
+            <img src="images/categories/tech-support.svg" alt="" width="48" height="48">
+            <h3>Tech Support</h3>
+            <p class="count">Loading…</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured providers -->
+    <section class="section">
+      <div class="wrapper">
+        <div class="section-head">
+          <h2>Featured providers</h2>
+          <p>Our highest-rated freelancers, loved by the community.</p>
+        </div>
+        <div class="grid providers" id="featured-providers">
+          <p>Loading featured providers…</p>
+        </div>
+        <p class="text-center" style="margin-top:1.5rem;">
+          <a class="btn btn-primary" href="directory.html">See all providers</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Accessible modal dialog reused across pages -->
+  <dialog id="provider-modal" aria-label="Provider details">
+    <div class="modal-inner"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-col-title">SkillConnect SV</h2>
+          <p>Connecting El Salvador with trusted local talent.</p>
+        </div>
+        <div>
+          <h2 class="footer-col-title">Explore</h2>
+          <p><a href="directory.html">Find Providers</a></p>
+          <p><a href="post.html">Post Your Skills</a></p>
+          <p><a href="attributions.html">Attributions</a></p>
+        </div>
+        <div>
+          <h2 class="footer-col-title">Project</h2>
+          <p><a href="https://youtu.be/" target="_blank" rel="noopener">Demo video walkthrough</a></p>
+          <p><a href="https://github.com/franciscorodriguezsv24/wdd231" target="_blank" rel="noopener">GitHub repository</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentyear"></span> SkillConnect SV · Alejandro Rodriguez · San Salvador, El Salvador</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

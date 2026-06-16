@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alejandro Rodriguez">
+  <meta name="description"
+    content="List your skills on SkillConnect SV and reach neighbors across El Salvador who need your services. Free profile guidelines and sign-up form.">
+  <title>Post Your Skills | SkillConnect SV</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <meta property="og:title" content="Post Your Skills | SkillConnect SV">
+  <meta property="og:description"
+    content="Join SkillConnect SV and let neighbors across El Salvador discover your services.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/final/post.html">
+  <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/final/images/hero.svg">
+  <meta property="og:site_name" content="SkillConnect SV">
+
+  <script type="module" src="scripts/post.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrapper header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span class="brand-name">Skill<span>Connect</span> SV</span>
+      </a>
+      <button type="button" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Find Providers</a>
+        <a href="post.html" class="active" aria-current="page">Post Your Skills</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrapper">
+        <div class="section-head">
+          <h1>Share your skills with the community</h1>
+          <p>Create a free profile and start getting discovered by neighbors who need exactly what you do.</p>
+        </div>
+
+        <h2 class="text-center">Why providers choose SkillConnect SV</h2>
+        <div class="grid benefits">
+          <article class="benefit">
+            <p class="icon">🚀</p>
+            <h3>Reach more clients</h3>
+            <p>Get found by people in your area actively looking for your services.</p>
+          </article>
+          <article class="benefit">
+            <p class="icon">💸</p>
+            <h3>Keep what you earn</h3>
+            <p>No commissions or listing fees — clients contact you directly.</p>
+          </article>
+          <article class="benefit">
+            <p class="icon">⭐</p>
+            <h3>Build your reputation</h3>
+            <p>Collect reviews and a verified badge that builds lasting trust.</p>
+          </article>
+          <article class="benefit">
+            <p class="icon">🕒</p>
+            <h3>Work on your terms</h3>
+            <p>Set your own rates and update your availability anytime.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrapper">
+        <div class="section-head">
+          <h2>Create your provider profile</h2>
+          <p>Fill in the details below. A strong, specific headline and bio get the most inquiries.</p>
+        </div>
+
+        <form class="form-card" id="post-form" method="get" action="form-action.html">
+          <fieldset>
+            <legend>About you</legend>
+
+            <div class="form-group">
+              <label for="fullName">Full name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel"
+                placeholder="+503 7000-0000"
+                pattern="^\+?[0-9 \-]{8,}$" required>
+              <small>Include your country code, e.g. +503 7000-0000.</small>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your service</legend>
+
+            <div class="form-group">
+              <label for="category">Service category <span class="req">*</span></label>
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Choose a category…</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="specialty">Specialty / headline <span class="req">*</span></label>
+              <input type="text" id="specialty" name="specialty" maxlength="80"
+                placeholder="e.g. Licensed plumber & general handywoman" required>
+              <small>One short line that sums up what you do (max 80 characters).</small>
+            </div>
+
+            <div class="form-group">
+              <label for="area">Service area <span class="req">*</span></label>
+              <input type="text" id="area" name="area" placeholder="e.g. San Salvador" required>
+            </div>
+
+            <div class="form-group">
+              <label for="rate">Hourly rate in USD <span class="req">*</span></label>
+              <input type="number" id="rate" name="rate" min="1" max="500" step="1" required>
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Years of experience <span class="req">*</span></label>
+              <input type="number" id="experience" name="experience" min="0" max="60" step="1" required>
+            </div>
+
+            <div class="form-group">
+              <label for="availability">Current availability <span class="req">*</span></label>
+              <select id="availability" name="availability" required>
+                <option value="available">Available now</option>
+                <option value="week">Within a week</option>
+                <option value="booked">Currently booked</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="bio">About you</label>
+              <textarea id="bio" name="bio" rows="4" maxlength="400"
+                placeholder="Tell clients about your experience and what makes your work stand out."></textarea>
+              <small>Optional, but profiles with a bio get more inquiries (max 400 characters).</small>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Agreement</legend>
+            <div class="form-group checkbox-row">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the community guidelines and confirm this information is accurate. <span class="req">*</span></label>
+            </div>
+          </fieldset>
+
+          <button class="btn btn-secondary" type="submit">Submit my profile</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrapper">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How much does it cost to list my skills?</summary>
+            <p>Listing is completely free. SkillConnect SV never charges commissions or per-lead fees —
+              clients contact you directly.</p>
+          </details>
+          <details>
+            <summary>How do I get the verified badge?</summary>
+            <p>After submitting your profile, our team confirms your identity and a sample of your work.
+              Verified providers appear higher in search results.</p>
+          </details>
+          <details>
+            <summary>Can I update my rates or availability later?</summary>
+            <p>Yes. You can change your hourly rate, availability and bio at any time from your profile.</p>
+          </details>
+          <details>
+            <summary>What makes a great profile?</summary>
+            <p>A specific headline, a clear list of skills, fair pricing and a friendly bio that explains
+              your experience. Profiles with all of these receive the most inquiries.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-col-title">SkillConnect SV</h2>
+          <p>Connecting El Salvador with trusted local talent.</p>
+        </div>
+        <div>
+          <h2 class="footer-col-title">Explore</h2>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="directory.html">Find Providers</a></p>
+          <p><a href="attributions.html">Attributions</a></p>
+        </div>
+        <div>
+          <h2 class="footer-col-title">Project</h2>
+          <p><a href="https://youtu.be/" target="_blank" rel="noopener">Demo video walkthrough</a></p>
+          <p><a href="https://github.com/franciscorodriguezsv24/wdd231" target="_blank" rel="noopener">GitHub repository</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentyear"></span> SkillConnect SV · Alejandro Rodriguez · San Salvador, El Salvador</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

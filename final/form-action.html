@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alejandro Rodriguez">
+  <meta name="description"
+    content="Confirmation of your SkillConnect SV provider profile submission.">
+  <title>Profile Submitted | SkillConnect SV</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <meta property="og:title" content="Profile Submitted | SkillConnect SV">
+  <meta property="og:description" content="Thanks for joining SkillConnect SV.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://franciscorodriguezsv24.github.io/wdd231/final/form-action.html">
+  <meta property="og:image" content="https://franciscorodriguezsv24.github.io/wdd231/final/images/hero.svg">
+  <meta property="og:site_name" content="SkillConnect SV">
+
+  <script type="module" src="scripts/form-action.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrapper header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span class="brand-name">Skill<span>Connect</span> SV</span>
+      </a>
+      <button type="button" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Find Providers</a>
+        <a href="post.html">Post Your Skills</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrapper">
+        <div class="confirm-card">
+          <p class="check">✔</p>
+          <h1 id="applicant-name">Your profile was submitted!</h1>
+          <p>Thanks for joining SkillConnect SV. Our team will review your details and verify your
+            profile shortly. Here is a summary of what you sent:</p>
+
+          <table class="summary-table">
+            <caption class="visually-hidden">Summary of your submitted profile</caption>
+            <tbody id="summary-body"></tbody>
+          </table>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="directory.html">Browse providers</a>
+            <a class="btn btn-outline" href="post.html">Submit another profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-col-title">SkillConnect SV</h2>
+          <p>Connecting El Salvador with trusted local talent.</p>
+        </div>
+        <div>
+          <h2 class="footer-col-title">Explore</h2>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="directory.html">Find Providers</a></p>
+          <p><a href="attributions.html">Attributions</a></p>
+        </div>
+        <div>
+          <h2 class="footer-col-title">Project</h2>
+          <p><a href="https://youtu.be/" target="_blank" rel="noopener">Demo video walkthrough</a></p>
+          <p><a href="https://github.com/franciscorodriguezsv24/wdd231" target="_blank" rel="noopener">GitHub repository</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentyear"></span> SkillConnect SV · Alejandro Rodriguez · San Salvador, El Salvador</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
