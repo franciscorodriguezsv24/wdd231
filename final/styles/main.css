@@ -36,6 +36,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.6;
+  overflow-x: clip;
 }
 
 h1,
@@ -45,6 +46,7 @@ h4 {
   font-family: var(--font-head);
   line-height: 1.2;
   margin: 0 0 0.5em;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -202,6 +204,7 @@ img {
 }
 .hero-grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.5rem;
   align-items: center;
 }
@@ -220,7 +223,9 @@ img {
   margin-top: 1.25rem;
 }
 .hero-img {
+  width: 100%;
   max-width: 420px;
+  height: auto;
   margin-inline: auto;
 }
 
@@ -733,7 +738,7 @@ legend {
     grid-template-columns: repeat(3, 1fr);
   }
   .hero-grid {
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   }
 }
 
